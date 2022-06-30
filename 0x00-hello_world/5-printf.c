@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
- * Main - print function
- * task 5
+ * Main - this program uses print function
+ * this program prints exactly with proper grammar, but the outcome is a piece of art,
+ * return: 0
  */
 int main(void)
 {
