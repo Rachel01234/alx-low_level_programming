@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
- * Main - this program uses print function
+ * Main - print the string in the put function
+ * use the main function
  * this program prints exactly with proper grammar, but the outcome is a piece of art,
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
