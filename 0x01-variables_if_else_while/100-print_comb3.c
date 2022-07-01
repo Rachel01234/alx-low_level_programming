@@ -8,25 +8,33 @@
  */
 
 int main(void)
-
 {
+int a = 0;
 
-	int i, j;
+	int b = 0;
 
-	for (j = 48 ; j < 58 ; j++)
+	int coma = 1;
+
+	while (a <= 9)
 	{
-	for (i = j + 1 ; i < 58 ; i++)
+	while (b <= 9)
 	{
-	putchar(j);
-	putchar(i);
-	if (j != 56 || i != 57)
+	if (a < b)
 	{
-	putchar(44);
+	if (coma == 0)
+	{
+	putchar(',');
 	putchar(32);
 	}
+	coma = 0;
+	putchar(a + '0');
+	putchar(b + '0');
 	}
+	++b;
 	}
+	++a;
+	b = 0;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
