@@ -1,4 +1,4 @@
-#include <stdio.h>                                                                 
+#include <stdio.h>
 
 /**
  * main -prints
@@ -31,5 +31,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-
