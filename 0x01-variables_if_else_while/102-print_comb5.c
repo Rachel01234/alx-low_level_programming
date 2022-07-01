@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -13,26 +11,42 @@ int main(void)
 
 {
 
-	int n, l;
+	int a = 0, b = 0, c = 0, d = 0;
+	int coma = 1;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	l = n % 10;
-	if (l > 5)
+	while (a <= 9)
 	{
-	printf("Last digit of %d is %d and is greater than 5\n", n, l);
-	}
-	else if (l == 0)
+	while (b <= 9)
 	{
-	printf("Last digit of %d is %d and is 0\n", n, l);
-	}
-	else
+	while (c <= 9)
 	{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
+	while (d <= 9)
+	{
+	if ((c * 10) + d > (a * 10) + b)
+	{
+	if (coma == 0)
+	{
+	putchar(',')
+	putchar(32);
 	}
-	if (last_digit == 0)
-	printf("Last digit of %d is %d and is 0\n", n, last_digit);
-	if (last_digit < 6 && last_digit != 0)
-	printf("Last digit of %d is %d and less than 6 and not 0\n", n, last_digit);
+	putchar(a + '0');
+	putchar(b + '0');
+	putchar(32);
+	putchar(c + '0');
+	putchar(d + '0');
+	coma = 0;
+	}
+	++d;
+	}
+	++c;
+	d = 0;
+	}
+	++b;
+	c = 0
+	}
+	++a;
+	b = 0;
+	}
+	putchar(10);
 	return (0);
 }
