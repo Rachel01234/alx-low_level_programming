@@ -26,7 +26,7 @@ int main(void)
 	{
 	if (coma == 0)
 	{
-	putchar(',')
+	putchar(',');
 	putchar(32);
 	}
 	putchar(a + '0');
@@ -42,7 +42,7 @@ int main(void)
 	d = 0;
 	}
 	++b;
-	c = 0
+	c = 0;
 	}
 	++a;
 	b = 0;
