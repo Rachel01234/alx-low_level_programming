@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - main function
@@ -14,9 +14,9 @@ int main(void)
 
 	while (n < 8)
 	{
-	putchar(string[n]);
+	_putchar(string[n]);
 	++n;
 	}
-	putchar(10);
+	_putchar(10);
 	return (0);
 }
