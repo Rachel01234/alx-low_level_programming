@@ -14,9 +14,9 @@ int main(void)
 
 	while (n < 8)
 	{
-	_putchar(string[n]);
+	putchar(string[n]);
 	++n;
 	}
-	_putchar(10);
+	putchar(10);
 	return (0);
 }
