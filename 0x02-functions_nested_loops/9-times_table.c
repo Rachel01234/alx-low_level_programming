@@ -13,13 +13,9 @@ void times_table(void)
 
 {
 	int col = 0;
-
 	int row = 0;
-
 	int units = 0;
-
 	int tens = 0;
-
 	int n = 0;
 
 	while (row < 10)
