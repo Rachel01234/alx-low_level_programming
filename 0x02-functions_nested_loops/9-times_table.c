@@ -10,7 +10,6 @@
 */
 
 void times_table(void)
-
 {
 	int col = 0;
 	int row = 0;
