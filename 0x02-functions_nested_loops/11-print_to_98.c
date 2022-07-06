@@ -19,7 +19,7 @@ void print_to_98(int n)
 	printf("%d%s", n, ", ");
 	}
 	else
-	{	
+	{
 	printf("%d", n);
 	}
 	n--;
