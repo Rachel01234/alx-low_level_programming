@@ -22,6 +22,7 @@ int main(void)
 	}
 	return (0);
 	}
+
 /**
  * isPrime - analise if a number is prime or not
  * @n: number to check
@@ -52,6 +53,7 @@ int isPrime(long int n)
 	return (1);
 	}
 }
+
 /**
  * biggestFactor - returns the biggest prime factor of a number
  * @a: number to check
@@ -65,7 +67,7 @@ long int biggestFactor(long int a)
 
 	factor = a;
 	for (i = 2; i <= factor; i++)
-{
+	{
 	if (isPrime(factor) == 1)
 	{
 	break;
@@ -85,13 +87,6 @@ long int biggestFactor(long int a)
 	}
 	return (factor);
 }
-
-
-
-
-
-
-
 
 
 
