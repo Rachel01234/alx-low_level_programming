@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - function 
+ * print_rev - function
  * prints a string, in reverse
  * @s: pointer of parameter
 */
