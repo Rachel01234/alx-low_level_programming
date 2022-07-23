@@ -1,7 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-int _putchar(char c);
-int _atoi(char *s);
-
-#endif
+int main(void)
+{
+  _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+  return (0);
+}
