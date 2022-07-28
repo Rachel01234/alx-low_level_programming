@@ -1,29 +1,35 @@
 #include "main.h"
-
 /**
- * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
+ * print_number - Print integer
+ * @n: number
  */
-int main(int argc, char *argv[])
+void print_number(int n)
 {
-unsigned long mul;
-int i, j;
-	if (argc != 3)
-	{ printf("Error\n");
-	exit(98); }
-	for (i = 1; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{  printf("Error\n");
-			exit(98); }
-		}
+	unsigned int n2, number, base10 = 1;
 
+	if (n < 0)
+	{
+		_putchar('-');
+		n2 = -n;
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
-	printf("%lu\n", mul);
-return (0);
+	else
+	{
+		n2 = n;
+	}
+	number = n2;
+	/* Obtenemos su base */
+	while (number > 9)
+	{
+		number = number / 10;
+		base10 = base10 * 10;
+	}
+	/* Descomponemos en base 10*/
+	number = n2;
+	while (base10 > 1)
+	{
+		_putchar((number / base10) + '0');
+		number = number % base10;
+		base10 = base10 / 10;
+	}
+	_putchar((n2 % 10) + '0');
 }
